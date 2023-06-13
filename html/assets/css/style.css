@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1080px;
+  margin: 0 auto;
+}
+nav {
+  text-align: center;
+  font-family: "Courgette", cursive;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px 30px;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li.active a {
+  color: green;
+}
+nav ul li a:hover {
+  color: green;
+}
+
+table {
+  margin-top: 25px;
+  border-collapse: collapse;
+}
+table tr:nth-child(even) {
+  background: #ddd;
+}
+table tr:hover {
+  background: #aaa;
+  transition: all 0.5s;
+}
+table tr th {
+  text-align: left;
+}
+table tr th,
+table tr td {
+  padding: 5px 10px;
+}
