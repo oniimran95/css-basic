@@ -1,0 +1,26 @@
+ul {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+}
+ul li {
+    list-style: none;
+    float: left;
+}
+ul li a {
+    text-decoration: none;
+    padding: 20px 20px;
+    color: white;
+    display: inline-block;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+}
+.dropdown a{
+    display: block;
+}
+.dropbtn:hover.dropdown{
+    display: block;
+}
