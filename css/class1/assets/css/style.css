@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bg-green {
+  width: 800px;
+  height: 400px;
+  background: green;
+  margin: 50px auto;
+  position: relative;
+}
+.bg-red {
+  background: red;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
