@@ -1,25 +1,54 @@
-ul{
-    margin: 0;
-    padding: 0;
-    background: rgb(85, 84, 84);
-    overflow: hidden;
+ul.main-nav {
+  margin: 0;
+  padding: 0;
+  background: rgb(85, 84, 84);
+  overflow: hidden;
 }
-ul li{
-    float: left;
-    list-style: none;
+ul.main-nav > li {
+  float: left;
+  list-style: none;
 }
-ul li a{
-    color: white;
-    text-decoration: none;
-    padding: 15px 30px;
-    display: inline-block;
+ul.main-nav > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: inline-block;
 }
-ul li a:hover{
-    background-color: rgb(10, 10, 10);
+ul.main-nav > li > a:hover {
+  background-color: rgb(10, 10, 10);
 }
-ul li.contact{
-    float: right;
+ul.main-nav > li.contact {
+  float: right;
 }
-ul li.active a{
-    background: rgb(10, 110, 10);
+ul.main-nav > li.active a {
+  background: rgb(10, 110, 10);
+}
+ul.main-nav > li:hover ul.child {
+  display: block;
+}
+
+ul.child {
+  margin: 0;
+  padding: 0;
+  background: rgb(85, 84, 84);
+  overflow: hidden;
+  display: none;
+}
+ul.child > li {
+  list-style: none;
+}
+ul.child > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: block;
+}
+ul.child > li > a:hover {
+  background-color: rgb(10, 10, 10);
+}
+ul.child {
+  position: absolute;
+}
+ul.child li {
+  display: block;
 }
