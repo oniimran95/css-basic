@@ -1,16 +1,23 @@
-body{
-    background-color: rgb(226, 215, 215);
-}
 div{
-    margin: 65px;
-    background-color: rgb(226, 215, 215);
+    padding: 80px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
 }
-.input {
-    width: 97%;
+form {
+    margin: 45px;
+    width: 50%;
+    left: 0;
+    top: 0;
+    margin: auto;
+    margin-top: 40px;
+}
+form input#first {
+    width: 100%;
     padding: 18px;
     border-radius: 5px;
     margin-top: 10px;
     border: 1px solid rgb(156, 146, 146);
+    box-sizing: border-box;
 }
 .input:hover{
     border: 2px solid;
