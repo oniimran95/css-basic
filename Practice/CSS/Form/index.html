@@ -7,31 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 </head>
+</html>
 <body>
-    <label for="name">First Name</label><br>
-    <input type="text" id="name" placeholder="Enter Your Name"><br>
-    <label for="email">Email</label><br>
-    <input type="email" id="email" placeholder="Enter Your Email"><br>
 
-    <label for="password">Email</label><br>
-    <input type="password" id="password" placeholder="Enter Your Password"><br>
 
-    <label for="date-of-birth">Date Of Birth</label><br>
-    <input type="date" id="date-of-birth"><br>
-
-    <label for="color">Color</label><br>
-    <input type="color" id="color"><br>
-
-    <input type="checkbox"><label for="checkbox">Male</label><br>
-    <input type="checkbox"><label for="checkbox">Female</label><br>
-
-    <input type="number" placeholder="Choose Number"><br>
-    <input type="submit"><br>
-    <input type="time"><br><br>
-    
     <div>
-        <i class="fa fa-search icon" aria-hidden="true"></i>
-        <input class="search" type="search" placeholder="Search..." >
+        <form action="">
+            <label for="first">First Name</label><br>
+            <input class="input" type="text" id="first" placeholder="Your Name.."><br><br>
+            <label for="last">Last Name</label><br>
+            <input class="input" type="text" id="first" placeholder="Your Last Name.."><br><br>
+            <label for="country">Country</label><br>
+            <select name="name" id="country" class="country">
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Italy">Italy</option>
+            </select>
+            <input class="btn" type="button" value="Register">
+        </form>
     </div>
+
+
 </body>
 </html>
