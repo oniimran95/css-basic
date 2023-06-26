@@ -1,37 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-</head>
-<body>
-    <label for="name">First Name</label><br>
-    <input type="text" id="name" placeholder="Enter Your Name"><br>
-    <label for="email">Email</label><br>
-    <input type="email" id="email" placeholder="Enter Your Email"><br>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <label for="name">First Name</label><br />
+    <input type="text" id="name" placeholder="Enter Your Name" /><br />
+    <label for="email">Email</label><br />
+    <input type="email" id="email" placeholder="Enter Your Email" /><br />
 
-    <label for="password">Email</label><br>
-    <input type="password" id="password" placeholder="Enter Your Password"><br>
+    <label for="password">Password</label><br />
+    <input
+      type="password"
+      id="password"
+      placeholder="Enter Your Password"
+    /><br />
 
-    <label for="date-of-birth">Date Of Birth</label><br>
-    <input type="date" id="date-of-birth"><br>
+    <label for="date_of_birth">Date Of Birth</label><br />
+    <input type="date" id="date_of_birth" /><br />
 
-    <label for="color">Color</label><br>
-    <input type="color" id="color"><br>
+    <label for="color">Color</label><br />
+    <input type="color" id="color" /><br />
 
-    <input type="checkbox"><label for="checkbox">Male</label><br>
-    <input type="checkbox"><label for="checkbox">Female</label><br>
+    <label>Gender</label><br />
+    <input type="radio" id="male" name="gender" /><label for="male">Male</label
+    ><br />
+    <input type="radio" id="female" name="gender" /><label for="female"
+      >Female</label
+    ><br />
 
-    <input type="number" placeholder="Choose Number"><br>
-    <input type="submit"><br>
-    <input type="time"><br><br>
-    
+    <p>What is your favorite food?</p>
+    <input type="checkbox" id="sweets" /> <label for="sweets">Sweets</label>
+    <input type="checkbox" id="soft_drinks" />
+    <label for="soft_drinks">Soft-drinks</label> <br /><br />
+
+    <input type="number" placeholder="Choose Number" /><br />
+    <input type="submit" /><br />
+    <input type="time" /><br /><br />
+
     <div>
-        <i class="fa fa-search icon" aria-hidden="true"></i>
-        <input class="search" type="search" placeholder="Search..." >
+      <i class="fa fa-search icon" aria-hidden="true"></i>
+      <input class="search" type="search" placeholder="Search..." />
     </div>
-</body>
+  </body>
 </html>

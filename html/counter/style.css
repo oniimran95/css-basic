@@ -1,0 +1,21 @@
+body {
+  counter-reset: section;
+}
+h1 {
+  counter-reset: sub-section;
+}
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+h2::before {
+  counter-increment: sub-section;
+  content: counter(section) "." counter(sub-section) " ";
+}
+.hero-area {
+  background-image: url("https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
