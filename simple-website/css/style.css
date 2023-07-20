@@ -32,3 +32,9 @@ header {
         font-weight: bold;
         font-size: 20px;
         transition: all .5s ease-in-out; }
+
+.hero-area {
+  background-image: url(../../img/background1.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover; }
