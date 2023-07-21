@@ -19,6 +19,7 @@ header {
     .main-nav {
         width: 100%;
         background-color: $red;
+        position: relative;
         ul {
             display: flex;
             justify-content: center;
@@ -41,6 +42,22 @@ header {
                 }
             }
         }
+        .top-ellipse {
+            position: absolute;
+            left: 50%;
+            top: 0px;
+            z-index: -1;
+            transform: translateX(-50%);
+        }
+        .top-corona {
+            position: absolute;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-50%);
+            img {
+                width: 45px;
+            }
+        }
     }
 }
 .hero-area {
@@ -48,4 +65,7 @@ header {
     height: 60vh;
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: -2;
 }
+

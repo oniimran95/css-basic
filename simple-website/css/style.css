@@ -15,7 +15,8 @@ header {
     justify-content: center; }
   header .main-nav {
     width: 100%;
-    background-color: #ed242e; }
+    background-color: #ed242e;
+    position: relative; }
     header .main-nav ul {
       display: flex;
       justify-content: center; }
@@ -32,9 +33,24 @@ header {
         font-weight: bold;
         font-size: 20px;
         transition: all .5s ease-in-out; }
+    header .main-nav .top-ellipse {
+      position: absolute;
+      left: 50%;
+      top: 0px;
+      z-index: -1;
+      transform: translateX(-50%); }
+    header .main-nav .top-corona {
+      position: absolute;
+      left: 50%;
+      top: 60px;
+      transform: translateX(-50%); }
+      header .main-nav .top-corona img {
+        width: 45px; }
 
 .hero-area {
   background-image: url(../../img/background1.jpg);
-  height: 50vh;
+  height: 60vh;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  position: relative;
+  z-index: -2; }
