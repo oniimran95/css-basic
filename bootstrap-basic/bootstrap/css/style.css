@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: sans-serif; }
+
+#nav-bar {
+  background-color: #2b3c53; }
+  #nav-bar li {
+    padding: 0 10px; }
+  #nav-bar .active {
+    font-size: 15px; }
+  #nav-bar a {
+    color: white;
+    padding: 44px 15px; }
+
+.hero-section .hero-content {
+  padding: 138px 20px; }
