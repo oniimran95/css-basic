@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #036;
+  color: #5cadff; }
+
+.sidebar {
+  float: left;
+  margin-left: 64px; }
+
+.main-container {
+  float: left; }
