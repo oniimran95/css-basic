@@ -63,3 +63,17 @@ body {
   background-color: #5e9a62;
   position: relative;
   z-index: 1; }
+  .about-section .about-content {
+    padding: 130px 0 280px 0; }
+    .about-section .about-content .about-us {
+      height: 100%; }
+  .about-section .smart-object {
+    position: absolute;
+    top: calc(100% - 140px);
+    right: 0; }
+
+.work-gallery {
+  padding: 115px 0 175px 0;
+  background: #fff;
+  position: relative;
+  z-index: 1; }
