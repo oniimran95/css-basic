@@ -73,7 +73,55 @@ body {
 }
 
 .about-section {
-    background-color: #5e9a62;
+    background-color: #60af65;
     position: relative;
     z-index: 1;
+    height: 900px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -36px;
+        top: -112px;
+        background-image: url(../img/graphic.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        left: 100%;
+        bottom: -122px;
+        background-image: url(../img/vector-smart.png);
+        width: 100%;
+        max-width: 360px;
+        height: 100%;
+        background-repeat: no-repeat;
+        transform: translateX(-100%);
+    }
+    img {
+        position: absolute;
+        top: 10%;
+    }
+    h1 {
+        margin-top: 185px;
+        color: #ffffff;
+        font-family: 'Righteous', cursive;
+        font-size: 50px;
+    }
+    p {
+        margin-top: 60px;
+        color: #fff;
+        font-size: 24px;
+    }
+    .btn {
+        margin-top: 50px;
+        color: #74a777;
+        background-color: #fff;
+        padding: 7px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+    }
 }
