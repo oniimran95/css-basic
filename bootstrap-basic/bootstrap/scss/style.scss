@@ -3,6 +3,16 @@
 $blue: #2b3c53;
 $green: #5e9a62;
 
+@mixin white-btn {
+    color: #74a777;
+    background-color: #fff;
+    padding: 7px 40px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -79,34 +89,35 @@ body {
     background-color: #5e9a62;
     position: relative;
     z-index: 1;
-    height: 900px;
-    img {
+    padding: 130px 0 250px 0;
+    .smart-object img {
         position: absolute;
-        top: 10%;
+        top: calc(100% - 170px);
+        right: 0;
     }
-    h1 {
-        margin-top: 185px;
-        color: #ffffff;
-        font-family: 'Righteous', cursive;
-        font-size: 50px;
-    }
-    p {
-        margin-top: 60px;
-        color: #fff;
-        font-size: 24px;
-    }
-    .btn {
-        margin-top: 50px;
-        color: #74a777;
-        background-color: #fff;
-        padding: 7px 30px;
-        border-radius: 25px;
-        font-size: 16px;
-        font-weight: bold;
+    .about-us {
+        height: 100%;
+        h1 {
+            color: #ffffff;
+            font-family: 'Righteous', cursive;
+            font-size: 50px;
+        }
+        p {
+            margin-top: 60px;
+            color: #fff;
+            font-size: 24px;
+        }
+        button {
+            margin-top: 50px;
+            @include white-btn;
+        }
     }
 }
 .work-gallery {
     padding: 112px 0 175px 0;
+    background: #fff;
+    position: relative;
+    z-index: 1;
     h1 {
         text-align: center;
         font-size: 70px;
@@ -131,4 +142,70 @@ body {
 
 .button-section {
     padding: 0 0 170px 0;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    .btn1 {
+        padding: 7px 50px;
+        border: none;
+        border-radius: 22px;
+        color: #fff;
+        background-color: $blue;
+    }
+    .pagination {
+        .pagination-item {
+            width: 10px;
+            height: 10px;
+            background: $blue;
+            border-radius: 50%;
+            margin: 10px;
+            &:first-child {
+                margin-left: 50px;
+            }
+            &:last-child {
+                margin-right: 50px;
+            }
+            &.active {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    .btn2 {
+        padding: 8px 55px;
+        border: none;
+        border-radius: 22px;
+        color: #fff;
+        background-color: $blue;
+    }
+}
+.study-section {
+    position: relative;
+    .smart-object-top {
+        position: absolute;
+        right: 0;
+        top: calc(-100% + 228px)
+    }
+    background: $green;
+    height: 770px;
+    h1 {
+        color: #fff;
+        font-size: 55px;
+        font-family: 'Righteous', cursive;
+    }
+    p {
+        color: #fff;
+        font-size: 21px;
+        margin-top: 30px;
+    }
+    button {
+        margin-top: 80px;
+        text-transform: uppercase;
+        @include white-btn;
+    }
+    .smart-object-bottom {
+        position: absolute;
+        left: 0;
+        bottom: calc(-100% + 260px);
+    }
 }
