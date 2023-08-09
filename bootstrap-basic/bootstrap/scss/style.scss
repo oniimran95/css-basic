@@ -209,3 +209,72 @@ body {
         bottom: calc(-100% + 260px);
     }
 }
+.education {
+    padding: 90px 0 170px 0;
+    position: relative;
+    background-color: $blue;
+    z-index: 1;
+    h1 {
+        color: #fff;
+        font-size: 65px;
+        font-family: 'Righteous', cursive;
+        margin-bottom: 100px;
+    }
+    p {
+        color:#fff;
+        font-size: 22px;
+    }
+    h3 {
+        color: #fff;
+        font-size: 35px;
+        margin: 70px 0 90px 70px;   
+    }
+    h4 {
+        color: #fff;
+        font-size: 45px;
+        font-family: 'Righteous', cursive;
+    }
+    img {
+        margin: 50px 0 80px 25px;
+    }
+}
+.watch-section {
+    padding: 80px 0 100px 0;
+    h1 {
+        font-size: 50px;
+        color: $blue;
+        font-family: 'Righteous', cursive;
+    }
+    p {
+        color: $blue;
+        font-size: 20px;
+        margin: 90px 0 110px 20px;
+    }
+    button {
+        background-color: $blue;
+        color: #fff;
+        padding: 8px 55px;
+        border-radius: 25px;
+    }
+}
+.footer {
+    background-color: $blue;
+    padding: 100px 0 140px 0;
+    h5 {
+        color: #fff;
+        font-size: 25px;
+        font-family: 'Righteous', cursive;
+    }
+    p {
+        color: #fff;
+        font-size: 20px;
+    }
+    .fa {
+        color: #2b3c53;
+        background-color: #fff;
+        font-size: 30px;
+        margin: 15px 10px 0 0;
+        padding: 10px;
+        border-radius: 50%;
+    }
+}
