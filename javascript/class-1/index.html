@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basic</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    
+    <p id="age"></p>
+
+    <button id="lightOn" onclick="lightOn()">Light On</button>
+    <img src="/img/pic_bulboff.gif" alt="Bulb" id="bulbImg">
+    <button id="lightOff" onclick="lightOff()">Light Off</button>
+
+
+    <script>
+        const gender = "male";
+        let age = 5;
+        age += 2;
+        console.log(age);
+        //document.getElementById('age').innerHTML = "<span style='color: red'>My age is: " + age + "</span>";
+        document.getElementById('age').innerHTML = `<span style='color: red'>My age is: ${age}</span>`;
+
+
+        function lightOn() {
+            document.getElementById('bulbImg').src = '/img/pic_bulbon.gif';
+            document.getElementById('age').style.fontSize = '25px';
+        }
+
+        function lightOff() {
+            document.getElementById('bulbImg').src = '/img/pic_bulboff.gif';
+            document.getElementById('age').style.fontSize = '10px';
+        }
+
+    </script>
+</body>
+</html>
