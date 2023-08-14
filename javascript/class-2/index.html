@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript class 2</title>
+</head>
+<body>
+
+    <input type="text" id="firstName" onkeyup="firstNameSet()" placeholder="Enter your first name"> <br>
+    <input type="text" id="lastName" onkeyup="LastNameSet()" placeholder="Enter your last name"> <br>
+    
+    <p id="firstNameText"></p>
+    <p id="LastNameText"></p>
+
+    <h1 id="fullName"></h1>
+
+    <button onclick="showFullName()">Show Full Name</button>
+
+
+    <script>
+        const cars = ["Tata", "BMW", "Bugati"];
+        cars[2] = "Volvo";
+        cars.unshift("Audi");
+        console.log(cars);
+
+        const userInfo = {
+            name: "Imran Hossain",
+            phone: "01750042986",
+            age: 30
+        };
+        userInfo.age = 32
+        userInfo.email = "imran.wpsi@gmail.com";
+        delete userInfo.phone;
+
+        console.log(userInfo, 'userInfo......');
+
+
+        // Show full name logic start
+        let firstName = "";
+        let lastName = "";
+
+        function firstNameSet() {
+            firstName = document.getElementById('firstName').value;
+            document.getElementById('firstNameText').innerText = firstName;
+        }
+        function LastNameSet() {
+            lastName = document.getElementById('lastName').value;
+            document.getElementById('LastNameText').innerText = lastName;
+        }
+        function showFullName() {
+            document.getElementById('fullName').innerText = firstName + ' ' + lastName;
+        }
+
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        const result = multiply(20, 5);
+        console.log(result, 'result....');
+
+        //showFullName("Imran", "Hossain");
+        // Show full name logic end
+    </script>
+</body>
+</html>
