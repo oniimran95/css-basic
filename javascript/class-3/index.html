@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript class 2</title>
+</head>
+<body>
+
+    <p id="name">This is borhan</p>
+    <button onclick="getText()">Get text</button>
+
+    <script>
+        let userInfo = {
+            firstName: "John",
+            lastName : "Doe",
+            fullName : function() {
+                return this.firstName + " " + this.lastName;
+            },
+            phone: '01750042986'
+        };
+        console.log(userInfo.firstName, 'userInfo....');
+
+
+
+
+
+        function getText() {
+            let text = document.getElementById('name').innerHTML;
+            document.getElementById('name').innerHTML = text.replace("borhan", "imran")
+        }
+        console.log(name).innerHTML;
+    </script>
+</body>
+</html>
