@@ -6,30 +6,18 @@
     <title>Javascript class 2</title>
 </head>
 <body>
-
-    <p id="name">This is borhan</p>
-    <button onclick="getText()">Get text</button>
+    <p id="demo"></p>
+  
 
     <script>
-        let userInfo = {
-            firstName: "John",
-            lastName : "Doe",
-            fullName : function() {
-                return this.firstName + " " + this.lastName;
-            },
-            phone: '01750042986'
-        };
-        console.log(userInfo.firstName, 'userInfo....');
+        const students = ["Shuvo", "Shamim", "Rifat"];
 
+        let text = "<ul>";
+            students.forEach(value => value === 'Shamim' ? text += `<li> ${value} </li>` : '' )
+            text += "</ul>";
 
-
-
-
-        function getText() {
-            let text = document.getElementById('name').innerHTML;
-            document.getElementById('name').innerHTML = text.replace("borhan", "imran")
-        }
-        console.log(name).innerHTML;
+        document.getElementById("demo").innerHTML = text;
     </script>
+
 </body>
 </html>
