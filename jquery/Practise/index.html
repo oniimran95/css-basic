@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p id="shamim">shamim</p>
+    <p id="shuvo">Shuvo</p>
+    <p id="Rifat">Rifat</p>
+
+
+    <h2 class="heading">This is heading</h2>
+    <button id="btnClick">Hide</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+
+     
+
+        // $(document).ready(function() {
+        //   $('#btnClick').click(function() {
+        //     $('p').remove('#shuvo');
+        //    });
+        // });
+        
+            $('#btnClick').click(function() {
+                $('.heading').toggle()
+                const targettext = $(this).text()
+                targettext === 'Hide' ? $(this).text('Show') :  $(this).text('Hide')
+            })
+
+        
+            (document)
+        
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
